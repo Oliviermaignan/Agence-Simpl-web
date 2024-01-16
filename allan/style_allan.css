@@ -1,0 +1,6 @@
+body{
+    width: 1440px;
+}
+#div_header{
+    background-image: url(agence-web/images/bg_hero_desktop.svg) ;
+}
