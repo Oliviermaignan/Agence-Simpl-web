@@ -1,6 +1,14 @@
 body{
     width: 1440px;
+    font-size: 18px;
 }
 #div_header{
-    background-image: url(agence-web/images/bg_hero_desktop.svg) ;
+    width:100%;
+    height: 100%;
+    background-image: url(agence-web/images/bg_hero_desktop.svg);
+}
+#sec1_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 0 40px;
 }
