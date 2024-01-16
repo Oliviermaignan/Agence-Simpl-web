@@ -1,3 +1,24 @@
 #container{
     background-color: red;
+    border: 3px dashed green;
+}
+
+
+.contact{
+    background-color: yellow
+}
+#Telephone, #mail, #Adresse {
+list-style: none;
+}
+
+#Telephone:before {
+background-image: url("Images/icon_phone.svg");
+}
+
+#mail:before {
+background-image: url("Images/icon_email.svg");
+}
+
+#Adresse:before {
+background-image: url("Images/icon_location.svg")
 }
