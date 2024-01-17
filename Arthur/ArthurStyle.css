@@ -47,7 +47,7 @@ footer{
 }
 
 
-.faq{
+#faq{
     margin-left: center;
     display: flex;
     list-style: none;
