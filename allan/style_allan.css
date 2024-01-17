@@ -7,7 +7,7 @@ header{
     height: 100%;
     background-size: 100%;
     background-image: url(agence-web/images/bg_hero_desktop.svg);
-    background-color: (208, 11%, 55%)
+    background-color: hsl(193, 100%, 96%);
 }
 .div_header{
     padding-right: 40px;
@@ -20,8 +20,8 @@ header{
 .bouton_1_header{
     background-color: white;
     border-radius: 25px;
-    padding: 0 40px 0 40px;
-    font-weight: bold;
+    padding: 10px 60px 10px 60px;
+    font-weight: 700;
     border: 1px solid white;
     box-shadow: 1px 1px 5px 1px rgb(224, 223, 223);
     text-transform: capitalize;
@@ -37,16 +37,16 @@ h1{
     padding-right:150px;
 }
 .sec2_1_header{
-    width: 50%;
+    width: 45%;
     padding-top: 6.5%;
     margin-left: 60px;
 }
 .sec2_2_header{
-    width: 50%;
-    padding-top: 40px;
+    width: 55%;
+    padding-top: 35px;
 }
 p{
-    margin:0 160px 30px 0;
+    margin:0 80px 30px 0;
     font-family: 'Open Sans';
     font-weight: 400;
 }
@@ -60,6 +60,6 @@ p{
     box-shadow: 1px 1px 5px 1px rgb(224, 223, 223);
 }
 .img_header{
-    width: 650px;
+    width: 690px;
     height: 500px;
 }
