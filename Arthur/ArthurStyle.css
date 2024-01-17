@@ -1,36 +1,47 @@
-#container{
-    background-color: red;
-    border: 3px dashed green;
+
+
+.box{
+    background-color: grey;
+    border: 5px solid red;
 }
 
 
-.contact{
-    background-color: yellow
+footer{
+    background-color: hsl(192, 100%, 9%);
+    color: aliceblue;
 }
 #coordonnees-tel, #coordonnees-mail, #coordonnees-adresse {
     list-style: none;
 }
 
-#coordonnees-tel:before, #coordonnees-mail:before, #coordonnees-adresse:before {
+#coordonnees-tel::before, #coordonnees-mail::before, #coordonnees-adresse::before {
     content: "";
     background-size:100%;
     width: 25px;
     height: 25px;
     position: absolute;
-    margin: -2px 0 0 -30px;
+    margin: 0 0 0 -30px;
 }
 
-#coordonnees-tel:before {
-    background-image: url("Images/icon_phone.png");
+#coordonnees-tel::before {
+    background-image: url("téléphone.png");
 }
     
-    #coordonnees-mail:before {
-    background-image: url("Images/icon_email.png");
+#coordonnees-mail::before {
+    background-image: url("mail.png");
 }
     
-    #coordonnees-adresse:before {
-    background-image: url("Images/icon_location.png")
+#coordonnees-adresse::before {
+    background-image: url("location.png")
 }
+
+.adresse{
+    font-size: x-small;
+    }
 .tel{
     margin-left: auto;
 }
+[Font Awesome](https://fontawesome.com/)
+[IcoMoon](https://icomoon.io/)
+[Ionicons](https://ionicons.com/)
+
