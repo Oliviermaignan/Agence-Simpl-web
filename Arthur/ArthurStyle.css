@@ -7,18 +7,30 @@
 .contact{
     background-color: yellow
 }
-#Telephone, #mail, #Adresse {
-list-style: none;
+#coordonnees-tel, #coordonnees-mail, #coordonnees-adresse {
+    list-style: none;
 }
 
-#Telephone:before {
-background-image: url("Images/icon_phone.svg");
+#coordonnees-tel:before, #coordonnees-mail:before, #coordonnees-adresse:before {
+    content: "";
+    background-size:100%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin: -2px 0 0 -30px;
 }
 
-#mail:before {
-background-image: url("Images/icon_email.svg");
+#coordonnees-tel:before {
+    background-image: url("Images/icon_phone.png");
 }
-
-#Adresse:before {
-background-image: url("Images/icon_location.svg")
+    
+    #coordonnees-mail:before {
+    background-image: url("Images/icon_email.png");
+}
+    
+    #coordonnees-adresse:before {
+    background-image: url("Images/icon_location.png")
+}
+.tel{
+    margin-left: auto;
 }
