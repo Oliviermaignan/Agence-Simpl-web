@@ -1,3 +1,36 @@
 #container{
     background-color: red;
+    border: 3px dashed green;
+}
+
+
+.contact{
+    background-color: yellow
+}
+#coordonnees-tel, #coordonnees-mail, #coordonnees-adresse {
+    list-style: none;
+}
+
+#coordonnees-tel:before, #coordonnees-mail:before, #coordonnees-adresse:before {
+    content: "";
+    background-size:100%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin: -2px 0 0 -30px;
+}
+
+#coordonnees-tel:before {
+    background-image: url("Images/icon_phone.png");
+}
+    
+    #coordonnees-mail:before {
+    background-image: url("Images/icon_email.png");
+}
+    
+    #coordonnees-adresse:before {
+    background-image: url("Images/icon_location.png")
+}
+.tel{
+    margin-left: auto;
 }
