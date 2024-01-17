@@ -8,7 +8,13 @@
 
 footer{
     background-color: hsl(192, 100%, 9%);
-    color: aliceblue;
+    color: rgb(132, 133, 134);
+    display: flex;
+}
+
+.faq{
+    display: flex;
+    list-style: none;
 }
 #coordonnees-tel, #coordonnees-mail, #coordonnees-adresse {
     list-style: none;
@@ -41,7 +47,5 @@ footer{
 .tel{
     margin-left: auto;
 }
-[Font Awesome](https://fontawesome.com/)
-[IcoMoon](https://icomoon.io/)
-[Ionicons](https://ionicons.com/)
+
 
