@@ -1,0 +1,25 @@
+body {
+    
+}
+
+
+.box {
+   
+    height:10%;
+    width:90%;
+    border:0px solid white;
+    border-radius: 5px;
+    box-shadow:1px 1px 5px 1px rgb(224, 223, 223);
+}
+
+p {
+    font-size: 18px;
+}
+
+svg {
+    content: ;
+    display:flex;
+    
+    height:50%;
+    width:50%;
+}
