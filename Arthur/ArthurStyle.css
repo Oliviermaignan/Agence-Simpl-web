@@ -1,11 +1,14 @@
-#container{
-    background-color: red;
-    border: 3px dashed green;
+
+
+.box{
+    background-color: grey;
+    border: 5px solid red;
 }
 
 
-.contact{
-    background-color: yellow
+footer{
+    background-color: hsl(192, 100%, 9%);
+    color: aliceblue;
 }
 #coordonnees-tel, #coordonnees-mail, #coordonnees-adresse {
     list-style: none;
@@ -31,6 +34,14 @@
 #coordonnees-adresse::before {
     background-image: url("location.png")
 }
+
+.adresse{
+    font-size: x-small;
+    }
 .tel{
     margin-left: auto;
 }
+[Font Awesome](https://fontawesome.com/)
+[IcoMoon](https://icomoon.io/)
+[Ionicons](https://ionicons.com/)
+
