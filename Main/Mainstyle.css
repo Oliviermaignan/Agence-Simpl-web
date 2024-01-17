@@ -4,7 +4,10 @@ body {
 
 
 .box {
-   
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    margin: 2% 5%;
     height:10%;
     width:90%;
     border:0px solid white;
@@ -14,12 +17,20 @@ body {
 
 p {
     font-size: 18px;
+    margin: 5%;
+    font-family: 'open sans';
+    Weight: 400, 700
+}
+
+h3 {
+    margin:5%;
+    font-family: 'open sans';
+    Weight: 600
 }
 
 svg {
-    content: ;
     display:flex;
-    
-    height:50%;
-    width:50%;
+    justify-content: flex-end;
+    height: 30%;
+    width:30%;
 }
