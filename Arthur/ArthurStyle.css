@@ -1,47 +1,63 @@
-
-
-.box{
-    background-color: grey;
-    border: 5px solid red;
-}
-
-
 footer{
     background-color: hsl(192, 100%, 9%);
-    color: aliceblue;
+    color: rgb(132, 133, 134);
+    display: flex;
 }
+
+#logo:before {
+    content: "";
+    background-size:cover;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin: 0 0 0 0;
+}
+
+#logo:before {
+    background-image: url(logo.svg);
+}
+
 #coordonnees-tel, #coordonnees-mail, #coordonnees-adresse {
     list-style: none;
 }
 
-#coordonnees-tel::before, #coordonnees-mail::before, #coordonnees-adresse::before {
+#coordonnees-tel:before, #coordonnees-mail:before, #coordonnees-adresse:before {
     content: "";
-    background-size:100%;
-    width: 25px;
-    height: 25px;
+    background-size: cover;
+    width: 10px;
+    height: 10px;
     position: absolute;
-    margin: 0 0 0 -30px;
+    margin: 0 20px 0 -20px;
 }
 
-#coordonnees-tel::before {
-    background-image: url("téléphone.png");
+#coordonnees-tel:before {
+    background-image: url(icon_phone.svg)
 }
     
-#coordonnees-mail::before {
-    background-image: url("mail.png");
+#coordonnees-mail:before {
+    background-image: url(icon_email.svg);
 }
     
-#coordonnees-adresse::before {
-    background-image: url("location.png")
+#coordonnees-adresse:before {
+    background-image: url(icon_location.svg)
 }
 
 .adresse{
-    font-size: x-small;
-    }
-.tel{
-    margin-left: auto;
+    font-size: small;
 }
-[Font Awesome](https://fontawesome.com/)
-[IcoMoon](https://icomoon.io/)
-[Ionicons](https://ionicons.com/)
+
+
+#faq{
+    margin-left: center;
+    display: flex;
+    list-style: none;
+}
+
+#reseaux{
+    margin-left: auto;
+    display: flex;
+
+}
+
+
 
