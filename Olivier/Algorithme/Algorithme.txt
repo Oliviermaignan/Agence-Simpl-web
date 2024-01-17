@@ -1,0 +1,58 @@
+annéeatester = X
+Bissextile = FALSE
+si annéeatester est divisé par 4 qui donne un chiffre entier
+    alors année Bissextile TRUE
+FIN SI 
+si annéeatester est divisé par 100 qui donne un chiffre entier
+    alors annéeatester bissextile FALSE;
+FIN SI
+si annéeatester est divisé par 400 qui donne un chiffre entier
+    alors annéeatester bissextile TRUE;
+FIN SI
+
+si annéeatester est bissextile TRUE afficher 
+    annéeatester + " est bien Bissextile "
+si non
+    annéeatester + " n'est pas Bissextile "
+
+
+"Correction"
+/ Initialisation des variables
+
+AnnéeÀTester = X;
+Bissextile = FALSE;
+
+SI la division de AnnéeÀTester par 4 me donne un chiffre entier
+  Alors première étape validée
+  Bissextile = TRUE;    
+  SI la division par 100 me donne un chiffre entier
+    Alors AnnéeÀTester est multiple de 100
+    ATTENTION on ne veut pas ça sauf si c'est 400
+    Bissextile = FALSE;
+    SI AnnéeÀTester divisée par 400 donne un nombre entier
+      Alors dernière condition validée
+       C'est une année bissextile
+       Bissextile = TRUE;
+    FIN SI
+  FIN SI
+FIN SI
+
+SI Bissextile == TRUE 
+  Alors Afficher AnnéeÀTester + "est une année bissextile";
+SINON
+  Alors Afficher AnnéeÀTester + "n'est pas une année bissextile";
+FIN SI
+
+
+Une autre manière de faire, sur une seule ligne :
+
+SI (annéeÀTester/4 = entier && annéeÀTester/100 != entier) || annéeÀTester/400 = entier
+  Alors bissextile est vrai
+SINON
+  Bissextile est fausse
+
+
+
+
+
+

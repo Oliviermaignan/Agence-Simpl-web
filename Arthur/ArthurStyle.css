@@ -12,6 +12,18 @@ footer{
     display: flex;
 }
 
+.logo::before {
+    background-image: url(logo.svg);
+}
+.logo::before{
+    content: "";
+    background-size:50%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin: 0 0 0 -30px;
+}
+
 .faq{
     display: flex;
     list-style: none;
@@ -20,32 +32,30 @@ footer{
     list-style: none;
 }
 
-#coordonnees-tel::before, #coordonnees-mail::before, #coordonnees-adresse::before {
+#coordonnees-tel:before, #coordonnees-mail:before, #coordonnees-adresse:before {
     content: "";
-    background-size:100%;
+    background-size:50%;
     width: 25px;
     height: 25px;
     position: absolute;
     margin: 0 0 0 -30px;
 }
 
-#coordonnees-tel::before {
-    background-image: url("téléphone.png");
+#coordonnees-tel:before {
+    background-image: url(icon_phone.svg)
 }
     
-#coordonnees-mail::before {
-    background-image: url("mail.png");
+#coordonnees-mail:before {
+    background-image: url(icon_email.svg);
 }
     
-#coordonnees-adresse::before {
-    background-image: url("location.png")
+#coordonnees-adresse:before {
+    background-image: url(icon_location.svg)
 }
 
 .adresse{
-    font-size: x-small;
-    }
-.tel{
-    margin-left: auto;
+    font-size: small;
 }
+
 
 
