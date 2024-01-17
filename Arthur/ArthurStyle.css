@@ -12,10 +12,7 @@ footer{
     display: flex;
 }
 
-.logo::before {
-    background-image: url(logo.svg);
-}
-.logo::before{
+#logo:before {
     content: "";
     background-size:50%;
     width: 25px;
@@ -23,6 +20,11 @@ footer{
     position: absolute;
     margin: 0 0 0 -30px;
 }
+
+#logo:before {
+    background-image: url(logo.svg);
+}
+
 
 .faq{
     display: flex;
@@ -55,6 +57,10 @@ footer{
 
 .adresse{
     font-size: small;
+}
+
+#reseaux{
+    display: flex;
 }
 
 
