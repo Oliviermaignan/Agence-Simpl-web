@@ -7,18 +7,18 @@ footer{
 /* ---------------------------------- */
 
 a{
-    color: rgb(111, 107, 107);
+    color: hsl(208, 11%, 55%);
     text-decoration: none;
 }
 
 #contact{
     display: flex;
     flex-direction: column;
-    margin: 50px;
-    line-height:  
+    margin: auto;
+    line-height:
 }
 
-#coordonnees-tel, #coordonnees-mail, #coordonnees-mail, #faq, #reseaux{
+#coordonnees-tel, #coordonnees-mail, #faq, #reseaux{
     line-height: 2.5;
 }
 #colone{
@@ -32,11 +32,11 @@ a{
 
 #coordonnees-tel:before, #coordonnees-mail:before, #coordonnees-adresse:before {
     content: "";
-    background-size: cover;
-    width: 20px;
-    height: 20px;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
     position: absolute;
-    margin: 0 20px 0 -30px;
+    margin: 15px -20px 10px -30px;
 }
 
 #coordonnees-tel:before {
@@ -66,16 +66,19 @@ ul, li{
     display: flex;
 }
 
-
 /* ---------------------------------------------- */
 
 #reseaux{
-    margin: auto;
-    
+    margin: auto;   
+}
+
+.reseau{
+    display: flex;
+    gap: 5px;
 }
 
 #facebook, #twitter, #instagram{
-a:hover{
+    a:hover{
     color: rgb(226, 88, 155)
 }
 }
