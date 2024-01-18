@@ -4,43 +4,43 @@ body{
     font-size: 18px;
     /* width: 1440px; */
 
-
-footer{
-    background-color:hsl(192, 100%, 9%);
-}
-
 p {
     margin: 5%;
     font-family: 'open sans';
-    Weight: 400, 700
+    font-weight: 400;
 }
 
 h3 {
     margin:5%;
     font-family: 'open sans';
-    Weight: 600;
+    font-weight: 600;
 }
 
-.imgleft {
-    height: 30%;
-    width:30%;
-}
 
 .box {
     display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    align-content: space-between;
+    justify-content: space-around;
     margin: 2% 5%;
-    border:0px solid white;
-    border-radius: 5px;
+    border: none;
+    border-radius: 10px;
     box-shadow:1px 1px 5px 1px rgb(224, 223, 223);
 }
 
-.imgright svg{
-width: 60%;
+.text-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.img-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-main img{
+    width: 70%;
+    padding: 10%;
 }
 
-.wordsleft{
-    width: 60%;
+footer{
+    background-color:hsl(192, 100%, 9%);
 }
