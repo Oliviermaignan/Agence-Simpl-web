@@ -1,36 +1,43 @@
 body {
     
+    
 }
 
 
 .box {
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
+ 
     margin: 2% 5%;
-    height:10%;
+    padding:0%;
+    height:40%;
     width:90%;
     border:0px solid white;
     border-radius: 5px;
     box-shadow:1px 1px 5px 1px rgb(224, 223, 223);
+    overflow: hidden;
 }
 
 p {
     font-size: 18px;
     margin: 5%;
     font-family: 'open sans';
-    Weight: 400, 700
+    font-weight: 400, 700;
 }
 
 h3 {
     margin:5%;
     font-family: 'open sans';
-    Weight: 600
+    font-weight: 600
 }
 
-svg {
-    display:flex;
-    justify-content: flex-end;
-    height: 30%;
-    width:30%;
+.imgright svg {
+    display: flex;
+    align-content: flex-end;
+    height: 50%;
+    width:50%;
 }
+
+.wordsleft {
+    height: 40%;
+    width:50%;
+}
+
