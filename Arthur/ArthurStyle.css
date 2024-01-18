@@ -2,21 +2,28 @@ footer{
     background-color: hsl(192, 100%, 9%);
     color: rgb(132, 133, 134);
     display: flex;
-    height: 200px;
+    height: 300px;
 }
 /* ---------------------------------- */
 
-#logo:before {
-    content: "";
-    background-size:cover;
-    width: 30px;
-    height: 30px;
-    position: absolute;
+a{
+    color: rgb(111, 107, 107);
+    text-decoration: none;
 }
 
-#logo:before {
-    background-image: url(logo.svg);
+#contact{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    line-height:  
 }
+
+#coordonnees-tel, #coordonnees-mail, #faq, #reseaux{
+    line-height: 2.5;
+}
+#colone{
+}
+
 
 #coordonnees-tel, #coordonnees-mail, #coordonnees-adresse {
     list-style: none;
@@ -25,14 +32,14 @@ footer{
 #coordonnees-tel:before, #coordonnees-mail:before, #coordonnees-adresse:before {
     content: "";
     background-size: cover;
-    width: 10px;
-    height: 10px;
+    width: 13px;
+    height: 15px;
     position: absolute;
     margin: 0 20px 0 -20px;
 }
 
 #coordonnees-tel:before {
-    background-image: url(icon_phone.svg)
+    background-image: url(icon_phone.svg);
 }
     
 #coordonnees-mail:before {
@@ -49,14 +56,17 @@ footer{
 
 /* --------------------------------------------- */
 
-#faq{
-    margin-left:;
-    display: flex;
-    list-style: none;
-}
 ul, li{
     list-style: none;
 }
+
+#faq{
+
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+}
+
 
 /* ---------------------------------------------- */
 
