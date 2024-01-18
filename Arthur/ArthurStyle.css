@@ -18,10 +18,11 @@ a{
     line-height:  
 }
 
-#coordonnees-tel, #coordonnees-mail, #faq, #reseaux{
+#coordonnees-tel, #coordonnees-mail, #coordonnees-mail, #faq, #reseaux{
     line-height: 2.5;
 }
 #colone{
+    line-height: ;
 }
 
 
@@ -32,10 +33,10 @@ a{
 #coordonnees-tel:before, #coordonnees-mail:before, #coordonnees-adresse:before {
     content: "";
     background-size: cover;
-    width: 13px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    margin: 0 20px 0 -20px;
+    margin: 0 20px 0 -30px;
 }
 
 #coordonnees-tel:before {
@@ -61,7 +62,7 @@ ul, li{
 }
 
 #faq{
-
+    margin: auto;
     margin-left: auto;
     display: flex;
     list-style: none;
@@ -71,7 +72,15 @@ ul, li{
 /* ---------------------------------------------- */
 
 #reseaux{
+    flex-direction: row;
+    margin: auto;
     margin-left: auto;
+
+}
+
+#facebook::before {
+    background-image: 
+
 }
 
 
