@@ -1,21 +1,22 @@
-body{
+body, h1, h2, h3, p{
     padding: 0;
     margin: 0;
     font-size: 18px;
     /* width: 1440px; */
-
-p {
-    margin: 5%;
-    font-family: 'open sans';
-    font-weight: 400;
 }
 
-h3 {
-    margin:5%;
+
+.titre-encart {
     font-family: 'open sans';
     font-weight: 600;
+    padding: 0 0 1% 15%;
 }
 
+.text-main p {
+    font-family: 'open sans';
+    font-weight: 400;
+    padding: 1% 0 0 15%;
+}
 
 .box {
     display: flex;
@@ -33,12 +34,12 @@ h3 {
 }
 .img-main{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 }
 .img-main img{
     width: 70%;
-    padding: 10%;
+    padding: 10% 5% 10% 0;
 }
 
 footer{
