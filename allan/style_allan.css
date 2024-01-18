@@ -1,5 +1,6 @@
 body{
-    width: 1440px;
+    max-width: 1440px;
+    width: auto;
     font-size: 18px;
 }
 header{
@@ -8,14 +9,13 @@ header{
     background-size: 100%;
     background-image: url(agence-web/images/bg_hero_desktop.svg);
     background-color: hsl(193, 100%, 96%);
-}
-.div_header{
-    padding-right: 40px;
+    padding:45px 3% 0 3%;
+    max-width: 1440px;
+    box-sizing: border-box;
 }
 .sec1_header{
     display: flex;
     justify-content: space-between;
-    padding: 45px 40px 0 60px;
 }
 .bouton_1_header{
     background-color: white;
@@ -28,25 +28,22 @@ header{
 }
 .sec2_header{
     display: flex;
-    padding: 40px 0 30px 0;
-}
-h1{
-    text-transform: capitalize;
-    font-size: 40px;
-    font-family: 'Poppins';
-    padding-right:150px;
+    padding: 2% 0 1.5% 0;
 }
 .sec2_1_header{
     width: 45%;
-    padding-top: 6.5%;
-    margin-left: 60px;
+    padding-top: 7%;
+    /* margin-left: 60px; */
 }
-.sec2_2_header{
-    width: 55%;
-    padding-top: 35px;
+h1{
+    text-transform: capitalize;
+    font-size: 2.8vw;
+    font-family: 'Poppins';
+    padding-right:20%;
 }
 p{
-    margin:0 80px 30px 0;
+    margin-top:30px;
+    padding-right: 50px;
     font-family: 'Open Sans';
     font-weight: 400;
 }
@@ -59,7 +56,54 @@ p{
     border: none;
     box-shadow: 1px 1px 5px 1px rgb(224, 223, 223);
 }
-.img_header{
-    width: 690px;
-    height: 500px;
+.sec2_2_header{
+    width: 55%;
+    padding: 35px 0 0 0;
+    display: flex;
+    justify-content: right;
+}
+.img_header{    
+    height: 95%;
+    width: 95%;
+}
+@media only screen and (max-width:720px){
+    header{
+        padding: 20px 3% 0 3%;
+    }
+    .sec1_header{
+        align-items: center;
+    }
+    .img_logo{
+        width: 30%;
+        height: 30%;
+        
+    }
+    .bouton_1_header{
+        padding: 2% 5% 2% 5%;
+    }
+    .sec2_header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .sec2_1_header{
+        width: 95%;
+    }
+    h1{
+        padding-right: 0;
+        font-size: 7vw;
+    }   
+    p{
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .bouton_2_header{
+        padding: 3% 15% 3% 15%;
+    }
+    .sec2_2_header{ 
+        width: 95%;
+        padding-top: 50px;
+    }
 }
