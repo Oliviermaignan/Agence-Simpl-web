@@ -63,25 +63,19 @@ ul, li{
 
 #faq{
     margin: auto;
-    margin-left: auto;
     display: flex;
-    list-style: none;
 }
 
 
 /* ---------------------------------------------- */
 
 #reseaux{
-    flex-direction: row;
     margin: auto;
-    margin-left: auto;
-
+    
 }
 
-#facebook::before {
-    background-image: 
-
+#facebook, #twitter, #instagram{
+a:hover{
+    color: rgb(226, 88, 155)
 }
-
-
-
+}
