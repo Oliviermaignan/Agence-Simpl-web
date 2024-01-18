@@ -2,15 +2,16 @@ footer{
     background-color: hsl(192, 100%, 9%);
     color: rgb(132, 133, 134);
     display: flex;
+    height: 200px;
 }
+/* ---------------------------------- */
 
 #logo:before {
     content: "";
     background-size:cover;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    margin: 0 0 0 0;
 }
 
 #logo:before {
@@ -46,17 +47,21 @@ footer{
     font-size: small;
 }
 
+/* --------------------------------------------- */
 
 #faq{
-    margin-left: center;
+    margin-left:;
     display: flex;
     list-style: none;
 }
+ul, li{
+    list-style: none;
+}
+
+/* ---------------------------------------------- */
 
 #reseaux{
     margin-left: auto;
-    display: flex;
-
 }
 
 
