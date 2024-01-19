@@ -18,8 +18,8 @@ a{
     margin: auto;
 }
 
-#coordonnees-tel, #coordonnees-mail, #faq, #reseaux{
-    line-height: 2.5;
+#coordonnees-tel, #coordonnees-mail{
+    line-height: 4.5;
 }
 
 #coordonnees-tel, #coordonnees-mail, #coordonnees-adresse {
@@ -47,14 +47,19 @@ a{
     background-image: url(icon_location.svg);
 }
 
-.adresse{
-    font-size: small;
+.adresse, .tel, .mail {
+    font-size: x-small;
 }
 
 /* --------------------------------------------- */
 
 ul, li{
     list-style: none;
+}
+
+#faq, #reseaux {
+    line-height: 2.5; 
+    font-size: small;
 }
 
 #faq{
@@ -64,13 +69,10 @@ ul, li{
 
 /* ---------------------------------------------- */
 
-#reseaux{
-    margin: auto;   
-}
-
 .reseau{
     display: flex;
     gap: 5px;
+    margin-bottom: auto;
 }
 
 #facebook, #twitter, #instagram{
