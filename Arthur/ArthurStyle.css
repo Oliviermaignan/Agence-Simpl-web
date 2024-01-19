@@ -57,7 +57,7 @@ ul, li{
     list-style: none;
 }
 
-#faq, #reseaux {
+#faq {
     line-height: 2.5; 
     font-size: small;
 }
@@ -65,6 +65,7 @@ ul, li{
 #faq{
     margin: auto;
     display: flex;
+    gap: 100px;
 }
 
 /* ---------------------------------------------- */
@@ -72,6 +73,8 @@ ul, li{
 .reseau{
     display: flex;
     gap: 5px;
+    font-size: larger;
+
     
 }
 
