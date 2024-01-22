@@ -66,6 +66,13 @@ h1{
     height: 95%;
     width: 95%;
 }
+.bouton_1_header:hover{
+    background-color: rgba(255, 255, 255, 0.769);
+    color: rgba(0, 0, 0, 0.37);
+}
+.bouton_2_header:hover , .get-started-button:hover{
+    background-color:hsla(322, 100%, 66%, 0.484) ;
+}
 @media only screen and (max-width:720px){
     header{
         padding: 20px 3% 0 3%;
