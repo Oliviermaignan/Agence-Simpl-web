@@ -23,13 +23,18 @@ body {
     box-shadow:1px 1px 5px 1px rgb(224, 223, 223);
 }
 
-img {
+.img-size {
     height: 80%;
     width: 70%;
     margin: 5%;
 }
+.img-size-2 {
+    height: 40%;
+    width: 30%;
+    margin: 5%;
+}
 
-p {
+.p-main {
     color:hsl(208, 11%, 55%);
     font-size: 18px;
     font-family: 'Open Sans';
@@ -53,6 +58,3 @@ h3 {
 
 }
 
-.img-reverse {
-   
-}
