@@ -48,7 +48,7 @@ a{
 }
 
 .adresse, .tel, .mail {
-    font-size: x-small;
+    font-size: medium;
 }
 
 /* --------------------------------------------- */
@@ -59,7 +59,7 @@ ul, li{
 
 #faq, #reseaux {
     line-height: 2.5; 
-    font-size: small;
+    font-size: large;
 }
 
 #faq{
@@ -71,7 +71,7 @@ ul, li{
 
 .reseau{
     display: flex;
-    gap: 5px;
+    gap: 10px;
     
 }
 
@@ -81,7 +81,11 @@ ul, li{
 }
 }
 
+#Reso{
+    line-height: 5;
+}
+
 #copyright{
     margin-top: auto;
-    padding: 5px;;
+    font-size: x-small;
 }
