@@ -1,38 +1,98 @@
 .community-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    position: relative;
-    margin: 0 auto;
-    padding: 4% 0% 3% 0%;
-    bottom: -80px;
-    z-index: 2;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px -2px 7px 0px rgb(174 173 173 / 23%);
-    }
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 60%;
+position: relative;
+margin: 0 auto;
+padding: 4% 0% 3% 0%;
+bottom: -80px;
+z-index: 2;
+background-color: white;
+border-radius: 10px;
+box-shadow: 0px -2px 7px 0px rgb(174 173 173 / 23%);
+}
+
+.get-started-button{
+font-family: 'open sans';
+font-weight: 600;
+background-color: hsl(322, 100%, 66%);
+text-transform: capitalize;
+color: white;
+font-size: 1.4vw;
+padding: 3% 12% 3% 12%;
+border-radius: 45px;
+border: none;
+box-shadow: 1px 1px 5px 1px rgb(224, 223, 223);
+white-space: nowrap;
+}
     
-    .get-started-button{
-    background-color: hsl(322, 100%, 66%);
-    text-transform: capitalize;
-    color: white;
-    font-size: 1.4vw;
-    padding: 3% 12% 3% 12%;
-    border-radius: 45px;
-    border: none;
-    box-shadow: 1px 1px 5px 1px rgb(224, 223, 223);
-    white-space: nowrap;
+.titre-community-section{
+    font-family: 'open sans';
+    padding: 0 0 4% 0;
+    font-size: 2.5vw;
+}
+
+@media only screen and (max-width:440px){
+
+.community-section{
+width: 95%;
+bottom: -60px;
+padding: 8% 0% 10% 0%;
+}
+
+.titre-community-section{
+font-size: 5vw;
+padding: 0 0 2% 0;
+}
+
+.get-started-button{
+font-size: 2.6vw;
+padding: 3% 15% 3% 15%;
+}
+}
+
+@media only screen and (min-width:440px) and (max-width: 720px){
+
+    .community-section{
+    width: 85%;
+    bottom: -65px;
+    padding: 8% 0% 10% 0%;
     }
     
     .titre-community-section{
-        padding: 0 0 4% 0;
-        font-size: 2.5vw;
+    font-size: 4vw;
+    padding: 0 0 2% 0;
     }
     
-    footer{
-        position: relative;
-        padding: 10%;
-        background-color:hsl(192, 100%, 9%);
-        color: white;
+    .get-started-button{
+    font-size: 2vw;
+    padding: 3% 15% 3% 15%;
     }
+}
+
+@media only screen and (min-width:720px) and (max-width: 1080px){
+
+    .community-section{
+    width: 75%;
+    bottom: -70px;
+    padding: 8% 0% 10% 0%;
+    }
+    
+    .titre-community-section{
+    font-size: 3vw;
+    padding: 0 0 2% 0;
+    }
+    
+    .get-started-button{
+    font-size: 2vw;
+    padding: 4% 15% 4% 15%;
+    }
+}
+
+footer{
+    position: relative;
+    padding: 10%;
+    background-color:hsl(192, 100%, 9%);
+    color: white;
+}
