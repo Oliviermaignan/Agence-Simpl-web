@@ -2,7 +2,7 @@ footer{
     background-color: hsl(192, 100%, 9%);
     color: rgb(132, 133, 134);
     display: flex;
-    height: 300px;
+    height: 200px;
     align-items: flex-end;
 }
 /* ---------------------------------- */
