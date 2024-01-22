@@ -50,6 +50,8 @@ h1{
     border-radius: 25px;
     border: none;
     box-shadow: 1px 1px 5px 1px rgb(224, 223, 223);
+    font-family: 'Open Sans';
+    font-weight: 600;
 }
 .sec2_2_header{
     width: 55%;
