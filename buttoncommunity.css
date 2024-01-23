@@ -5,12 +5,12 @@ align-items: center;
 width: 60%;
 position: relative;
 margin: 0 auto;
-padding: 4% 0% 3% 0%;
+padding: 3% 0% 3% 0%;
 bottom: -80px;
 z-index: 2;
 background-color: white;
 border-radius: 10px;
-box-shadow: 0px -2px 7px 0px rgb(174 173 173 / 23%);
+box-shadow: 0px -2px 10px 1px rgb(147 147 147 / 15%);
 }
 
 .get-started-button{
@@ -29,7 +29,8 @@ white-space: nowrap;
     
 .titre-community-section{
     font-family: 'open sans';
-    padding: 0 0 4% 0;
+    font-weight: 600;
+    padding: 0 0 1.5% 0;
     font-size: 2.5vw;
 }
 
