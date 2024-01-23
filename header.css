@@ -5,7 +5,6 @@ header{
     background-image: url(agence-web/images/bg_hero_desktop.svg);
     background-color: hsl(193, 100%, 96%);
     padding:45px 3% 0 3%;
-    max-width: 1440px;
     box-sizing: border-box;
 }
 .sec1_header{
