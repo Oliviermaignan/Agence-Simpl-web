@@ -76,6 +76,7 @@ h1{
 @media only screen and (max-width:720px){
     header{
         padding: 20px 3% 0 3%;
+        background-image: url(agence-web/images/bg_hero_mobile.svg);
     }
     .sec1_header{
         align-items: center;
