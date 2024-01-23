@@ -3,3 +3,7 @@ body{
     margin: 0;
     font-size: 18px;
 }
+
+h2{
+    color : hsl(192, 100%, 9%);
+}
