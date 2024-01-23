@@ -34,12 +34,14 @@ h1{
     font-size: 2.8vw;
     font-family: 'Poppins';
     padding-right:20%;
+    color: hsl(192, 100%, 9%);
 }
 .p_header{
     margin-top:30px;
     padding-right: 50px;
     font-family: 'Open Sans';
     font-weight: 400;
+    color: hsl(192, 100%, 9%);
 }
 .bouton_2_header{
     background-color: hsl(322, 100%, 66%);
