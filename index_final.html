@@ -9,17 +9,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="bouton_1_header .css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="buttoncommunity.css">
     <script src="scriptButton.js" defer></script>
+    <script src="button1HeaderPOPUP.js" defer></script>
 </head>
 <body>
     <header>
         <div class="div_header">
             <section class="sec1_header">
-                <img class="img_logo" src="images/logo.svg" alt="">
-                <button class="bouton_1_header">Try it free</button>
+                <img class="img_logo" src="images/logo.svg" alt="Huddle Logo">
+                <button class="bouton_1_header" onClick="openForm()">Try it free</button>
+                <div class="form-popup" id="myForm">
+                  <form action="/action_page.php" class="form-container">
+                    <h5>Create an account and try it for free</h5>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
             </section>
             <section class="sec2_header">
                 <section class="sec2_1_header">
