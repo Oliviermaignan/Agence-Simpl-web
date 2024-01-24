@@ -55,11 +55,13 @@ a{
 
 ul, li{
     list-style: none;
+    padding-left: 5px;
 }
 
 #faq, #reseaux {
     display: flex;
     margin: auto;
+    padding-left: 0;
     line-height: 2.5; 
     font-size: medium;
     gap: 20px;
@@ -89,30 +91,46 @@ ul, li{
 }
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
     footer{
         display: flex;
         flex-direction: column;
         padding-top: 90px;
-        height: 700px;
+        height: 650px;
     }
 
+    #contact{
+        padding-left: 30px;
+        margin-left: 0;
+        font-size: large;
+    }
+
+
    #faq{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding-left: 0px;
-    gap: 0px;
+        flex-direction: column;
+        margin-left: 0px;
+        padding-left: 0px;
+        font-size: large;
+        gap: 0;
+   }
+
+   #col{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
    }
 
    .reseau{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0px;
+        font-size: xx-large;
+        margin-top: 0;
+        margin-bottom: 0;
    }
 
    #copyright{
-    justify-content: center;
-    margin-top: auto;
+        margin-bottom: 0;
+        margin-top: -20px;
+        font-size: x-small;
    }
 }
