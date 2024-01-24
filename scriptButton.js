@@ -102,4 +102,3 @@ emailField.appendChild(labelEmailInput)
 emailField.appendChild(emailInput)
 
 }
-

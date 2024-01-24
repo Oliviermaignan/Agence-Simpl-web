@@ -25,7 +25,7 @@
     background-color : white;
     box-shadow : 0px 0px 10px 1px rgb(5 5 5 / 63%);
     border-radius : 10px;
-    padding: 5%;
+    padding: 2%;
 }
 
 .modalWindowContent{
@@ -48,16 +48,16 @@ cursor : pointer;
 font-family: 'open sans';
 font-weight: 600;
 margin: 0 auto;
+text-align: center;
 }
 
 .formContainer{
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 .field{
-padding: 5% 1%;
+padding: 3% 1%;
 display: flex;
 justify-content: space-between;
 }
