@@ -28,9 +28,11 @@ getStartedButton.addEventListener('click', ()=>{
     closeBtn.className = 'closeBtn';
     closeBtn.innerHTML = '&times;';
 
-    let popUpWindow = document.querySelector('.popUpWindow')
-    popUpWindow.style.backdropFilter = 'blur(4px)'
+    let popUpWindow = document.querySelector('.popUpWindow');
 
+    // modalWindow.style.backdropFilter = 'blur(4px)';
+
+    console.log(modalWindow)
     popUpWindow.appendChild(modalWindow)
     modalWindow.appendChild(modalWindowContent);
     modalWindowContent.appendChild(closeBtn);
