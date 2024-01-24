@@ -36,10 +36,3 @@ getStartedButton.addEventListener('click', ()=>{
     modalWindowContent.appendChild(closeBtn);
     modalWindowContent.appendChild(text);
 });
-
-
-
-
-
-
-
