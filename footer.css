@@ -111,7 +111,7 @@ ul, li{
         flex-direction: column;
         margin-left: 0px;
         padding-left: 0px;
-        font-size: large;
+        font-size: medium;
         gap: 0;
         line-height: 1.5;
    }
