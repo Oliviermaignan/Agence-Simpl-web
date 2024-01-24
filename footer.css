@@ -89,6 +89,30 @@ ul, li{
 }
 
 
-@media screen {
-    
+@media screen and (max-width: 576px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding-top: 90px;
+        height: 700px;
+    }
+
+   #faq{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 0px;
+    gap: 0px;
+   }
+
+   .reseau{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+   }
+
+   #copyright{
+    justify-content: center;
+    margin-top: auto;
+   }
 }
