@@ -17,6 +17,9 @@ header{
     display: flex;
     justify-content: space-between;
 }
+.img_logo{
+    animation: Animationlogo alternate 2s;
+}
 .bouton_1_header{
     background-color: white;
     border-radius: 25px;
@@ -25,6 +28,7 @@ header{
     border: 1px solid white;
     box-shadow: 1px 1px 5px 1px rgb(224, 223, 223);
     text-transform: capitalize;
+    animation: Animation alternate 2s;
 }
 .sec2_header{
     display: flex;
@@ -40,12 +44,14 @@ h1{
     font-size: 2.8vw;
     font-family: 'Poppins';
     padding-right:20%;
+    animation: Animationh1 alternate 4s;
 }
 .p_header{
     margin-top:30px;
     padding-right: 50px;
     font-family: 'Open Sans';
     font-weight: 400;
+    animation: Animationp alternate 4s;
 }
 .bouton_2_header{
     background-color: hsl(322, 100%, 66%);
@@ -57,12 +63,14 @@ h1{
     box-shadow: 1px 1px 5px 1px rgb(224, 223, 223);
     font-family: 'Open Sans';
     font-weight: 600;
+    animation: Animationbutton alternate 2s;
 }
 .sec2_2_header{
     width: 55%;
     padding: 35px 0 0 0;
     display: flex;
     justify-content: right;
+    animation: Animationimg alternate 2s;
 }
 .img_header{    
     height: 95%;
@@ -114,5 +122,117 @@ h1{
     .sec2_2_header{ 
         width: 95%;
         padding-top: 50px;
+    }
+}
+
+
+/* animation header */
+@keyframes Animationlogo {
+    10% {
+        transform: rotate(0.01turn);
+    }
+    20% {
+        transform: rotate(-0.01turn);   
+    }
+    30% {
+        transform: rotate(0.01turn);    
+    }
+    40% {
+        transform: rotate(-0.01turn);    
+    }
+    50% {
+        transform: rotate(0.01turn);  
+    }
+    60% {
+        transform: rotate(-0.01turn);   
+    }
+    70% {
+        transform: rotate(0.01turn);    
+    }
+    80% {
+        transform: rotate(-0.01turn);   
+    }
+    90% {
+        transform: rotate(0.01turn);   
+    }
+}
+@keyframes Animation {
+    from {
+        color: hsl(192, 100%, 9%);
+    }
+
+    33% {
+        color: grey;
+        transform: scale(1.2);
+    }
+
+    66% {
+        color: rgb(122, 122, 201);
+    }
+  
+    to {
+        color: hsl(192, 100%, 9%);
+    }
+}
+@keyframes Animationp {
+    from {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(0.4);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes Animationh1 {
+    from {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    60% {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+ @keyframes Animationbutton {
+    from {
+        color: white;
+    }
+
+    33% {
+        color: wheat;
+        transform: scale(1.03);
+        transform: rotate(0.7turn);
+    }
+
+    66% {
+        color: rgb(218, 216, 216);
+    }
+  
+    to {
+        color: white;
+    }
+} 
+@keyframes Animationimg { 
+    33% {
+        transform: rotate(0.01turn);
+    }
+    66% {
+        transform: rotate(-0.01turn);
     }
 }
