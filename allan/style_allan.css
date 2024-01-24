@@ -55,6 +55,8 @@ h1{
     border-radius: 25px;
     border: none;
     box-shadow: 1px 1px 5px 1px rgb(224, 223, 223);
+    font-family: 'Open Sans';
+    font-weight: 600;
 }
 .sec2_2_header{
     width: 55%;
@@ -65,6 +67,13 @@ h1{
 .img_header{    
     height: 95%;
     width: 95%;
+}
+.bouton_1_header:hover{
+    background-color: rgba(255, 255, 255, 0.769);
+    color: rgba(0, 0, 0, 0.37);
+}
+.bouton_2_header:hover , .get-started-button:hover{
+    background-color:hsla(322, 100%, 66%, 0.484) ;
 }
 @media only screen and (max-width:720px){
     header{

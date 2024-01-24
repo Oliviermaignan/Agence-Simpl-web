@@ -37,6 +37,7 @@ function creationPopUp(){
     modalWindowContent.appendChild(closeBtn);
     modalWindowContent.appendChild(text);
 
+
     creationDuFormulaire()
 
 }
@@ -101,3 +102,4 @@ emailField.appendChild(labelEmailInput)
 emailField.appendChild(emailInput)
 
 }
+
