@@ -19,13 +19,9 @@ twitter.addEventListener("mouseout" , () => {
 });
 
 const instagram = document.getElementById("instagram");
-
-
-
 instagram.addEventListener("mouseover" , () => {
     instagram.classList.add("zoomed");
 });
-
 instagram.addEventListener("mouseout" , () => {
     instagram.classList.remove("zoomed");
 });
