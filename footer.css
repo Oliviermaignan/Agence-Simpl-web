@@ -78,10 +78,18 @@ ul, li{
     margin-bottom: 165px;
 }
 
-#facebook, #twitter, #instagram{
+.facebook, .twitter, .instagram{
     a:hover{
     color: hsl(322, 100%, 66%)
 }
+}
+
+#facebook, #twitter, #instagram{
+    overflow: hidden;
+    transition: transform 0.3S ease;
+}
+.zoomed{
+    transform: scale(2.2);
 }
 
 
@@ -90,7 +98,6 @@ ul, li{
     margin-top: auto;
     color: hsl(210, 15%, 87%);;
 }
-
 
 @media screen and (max-width: 720px) {
     footer{
