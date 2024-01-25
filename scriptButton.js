@@ -25,12 +25,7 @@ function creationPopUp(){
     closeBtn.className = 'closeBtn';
     closeBtn.innerHTML = '&times;';
 
-    let overlay = document.querySelector('.overlay')
 
-    closeBtn.addEventListener('click', ()=>{
-        popUpWindow.classList.add('hidden')
-        overlay.classList.add('hidden')
-    })
 
     let popUpWindow = document.querySelector('.popUpWindow');
     popUpWindow.appendChild(modalWindowContent);
