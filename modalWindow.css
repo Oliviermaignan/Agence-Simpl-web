@@ -61,3 +61,16 @@ padding: 3% 1%;
 display: flex;
 justify-content: space-between;
 }
+
+.subscribeBtn{
+font-family: 'open sans';
+font-weight: 600;
+background-color: hsl(322, 100%, 66%);
+color: white;
+font-size: 1.4vw;
+padding: 3% 12% 3% 12%;
+border-radius: 45px;
+border: none;
+box-shadow: 1px 1px 5px 1px rgb(224, 223, 223);
+margin: 0 auto;
+}

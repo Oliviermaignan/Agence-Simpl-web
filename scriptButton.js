@@ -81,6 +81,11 @@ let labelEmailInput = document.createElement('label');
 labelEmailInput.setAttribute('for', 'email');
 labelEmailInput.textContent = "e-m@il"
 
+//button
+let subscribeBtn = document.createElement('button')
+subscribeBtn.classList.add('subscribeBtn')
+subscribeBtn.textContent = "Subcribe"
+
 //attribution parent enfant
 modalWindowContent.appendChild(formContainer)
 
@@ -100,5 +105,8 @@ secondField.appendChild(lastNameInput)
 //label et input email field
 emailField.appendChild(labelEmailInput)
 emailField.appendChild(emailInput)
+
+//button subscribe
+modalWindowContent.appendChild(subscribeBtn)
 
 }
