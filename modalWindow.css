@@ -1,7 +1,7 @@
 .overlay{
     position: fixed;
     width: 100%; 
-    height: 100%; 
+    /* height: max-content;  */
     top: 0;
     left: 0;
     right: 0;
@@ -17,6 +17,7 @@
 
 .popUpWindow {
     position: fixed;
+    height: max-content;
     right :10%;
     left : 10%;
     top : 10%;
@@ -26,6 +27,8 @@
     box-shadow : 0px 0px 10px 1px rgb(5 5 5 / 63%);
     border-radius : 10px;
     padding: 2%;
+    background-image: url(images/bg_hero_mobile.svg);
+    background-color: rgba(243, 255, 255, 0.959);
 }
 
 .modalWindowContent{
@@ -59,5 +62,39 @@ text-align: center;
 .field{
 padding: 3% 1%;
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
+}
+
+.btnfield{
+    display: flex;
+}
+
+.subscribeBtn{
+font-family: 'open sans';
+font-weight: 600;
+background-color: hsl(322, 100%, 66%);
+color: white;
+font-size: 1.4vw;
+padding: 3% 12% 3% 12%;
+border-radius: 45px;
+border: none;
+box-shadow: 1px 1px 5px 1px rgb(224, 223, 223);
+margin: 0 auto;
+}
+
+.subscribeBtn:hover{
+background-color:hsla(322, 100%, 73%, 0.651)
+}
+
+
+.field > input{
+border: none;
+box-shadow: 0px 0px 2px 0px #aaaaaa6b;
+border-radius: 3px;
+}
+
+@media screen and (max-width: 720px) {
+    .subscribeBtn{
+        font-size: 2vw;
+    }
 }
