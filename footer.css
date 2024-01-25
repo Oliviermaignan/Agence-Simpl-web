@@ -2,13 +2,13 @@ footer{
     background-color: hsl(192, 100%, 9%);
     color: rgb(132, 133, 134);
     display: flex;
-    height: 200px;
+    height: 400px;
     align-items: flex-end;
 }
 /* ---------------------------------- */
 
 a{
-    color: hsl(208, 11%, 55%);
+    color: hsl(210, 15%, 87%);
     text-decoration: none;
 }
 
@@ -19,7 +19,7 @@ a{
 }
 
 #coordonnees-tel, #coordonnees-mail{
-    line-height: 4.5;
+    line-height: 2.5;
 }
 
 #coordonnees-tel, #coordonnees-mail, #coordonnees-adresse {
@@ -28,7 +28,7 @@ a{
 
 #coordonnees-tel:before, #coordonnees-mail:before, #coordonnees-adresse:before {
     content: "";
-    background-size: contain;
+    background-size: cover;
     width: 10px;
     height: 10px;
     position: absolute;
@@ -36,15 +36,15 @@ a{
 }
 
 #coordonnees-tel:before {
-    background-image: url(icon_phone.svg);
+    background-image: url(images/icon_phone.svg);
 }
     
 #coordonnees-mail:before {
-    background-image: url(icon_email.svg);
+    background-image: url(images/icon_email.svg);
 }
     
 #coordonnees-adresse:before {
-    background-image: url(icon_location.svg);
+    background-image: url(images/icon_location.svg);
 }
 
 .adresse, .tel, .mail {
@@ -55,37 +55,84 @@ a{
 
 ul, li{
     list-style: none;
+    padding-left: 5px;
+    margin: 0;
 }
 
 #faq, #reseaux {
-    line-height: 2.5; 
-    font-size: large;
-}
-
-#faq{
-    margin: auto;
     display: flex;
+    margin: auto;
+    padding-left: 0;
+    line-height: 2.5; 
+    font-size: medium;
+    gap: 20px;
 }
 
 /* ---------------------------------------------- */
 
 .reseau{
     display: flex;
+    font-size: x-large;
     gap: 10px;
-    
+    padding-left: 0;
+    margin-bottom: 165px;
 }
 
 #facebook, #twitter, #instagram{
     a:hover{
-    color: rgb(226, 88, 155)
+    color: hsl(322, 100%, 66%)
 }
 }
 
-#Reso{
-    line-height: 5;
-}
 
 #copyright{
+    font-size: medium;
     margin-top: auto;
-    font-size: x-small;
+    color: hsl(210, 15%, 87%);;
+}
+
+
+@media screen and (max-width: 720px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding-top: 90px;
+        height: 650px;
+    }
+
+    #contact{
+        padding-left: 30px;
+        margin-left: 0;
+        font-size: large;
+    }
+
+
+   #faq{
+        flex-direction: column;
+        margin-left: 0px;
+        padding-left: 0px;
+        font-size: medium;
+        gap: 0;
+        line-height: 1.5;
+   }
+
+   #col{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+   }
+
+   .reseau{
+        font-size: xx-large;
+        margin-top: 0;
+        margin-bottom: 0;
+   }
+
+   #copyright{
+        margin-bottom: 0;
+        margin-top: -20px;
+        font-size: x-small;
+   }
 }

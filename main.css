@@ -56,3 +56,24 @@ h3 {
     margin: 3% 2% 0 0;
 }
 
+
+@media only screen and (max-width:720px){
+    .box {
+        display: flex;
+        flex-direction: column-reverse;
+        padding:10% 8% 5% 8%;
+        margin-bottom: 8%;
+    }
+    .img-main , .right {
+        width: 95%;
+        padding: 5%;
+    }
+    .img-size {
+        width: 100%;
+    }
+    .text-main {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }  
+}
