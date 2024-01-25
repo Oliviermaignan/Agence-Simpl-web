@@ -6,44 +6,49 @@
     position: fixed;
     right: 30%;
     top: 30%;
-    z-index: 2;
+    z-index: 4;
+   ;
+  }
+
+  .direction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   h5 {
-    display: flex;
-    justify-content: center;
     color:hsl(192, 100%, 9%);
     font-size: 24px;
-
+    text-align: center;
+    opacity: 1;
   }
   
   /* Add styles to the form container */
   .form-container {
-    height:40%;
-    width: 80%;
     padding: 10px;
+    background-image: url(images/bg_hero_mobile.svg);
     background-color:hsl(322, 100%, 66%);
+    opacity: 95%;
     border-radius: 10px;
-  }
-  
+    font-family: Poppins;
+   }
+
   /* input fields */
   .form-container input[type=text], .form-container input[type=password] {
-    display:flex;
-    justify-content: center;
-    flex-direction: ;
     width: 60%;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
     background: hsl(193, 100%, 96%);
+    opacity: 100%;
   }
   
-  /* When the inputs get focus, do something */
-  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  /* When the inputs get focus, do something (not working)*/
+  /* .form-container input[type=text]:focus, .form-container input[type=password]:focus {
     background-color: hsl(193, 100%, 96%);
     outline: none;
   }
-  
+   */
   /* Set a style for the submit/login button */
   .form-container .btn {
     background-color: hsl(192, 100%, 9%);
@@ -51,9 +56,8 @@
     padding: 16px 20px;
     border: none;
     cursor: pointer;
-    width: 10%;
+    width: 30%;
     margin-bottom:10px;
-    opacity: 0.8;
   }
   
   /* Add color to the cancel button */

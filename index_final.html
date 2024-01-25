@@ -21,17 +21,19 @@
     <header>
         <div class="div_header">
             <section class="sec1_header">
-                <img class="img_logo" src="images/logo.svg" alt="Huddle Logo">
-                <button class="bouton_1_header" onClick="openForm()">Try it free</button>
+              <img class="img_logo" src="images/logo.svg" alt="Huddle Logo">
+              <button class="bouton_1_header" onClick="openForm()">Try it free</button>
                 <div class="form-popup" id="myForm">
                   <form action="/action_page.php" class="form-container">
-                    <h5>Create an account and try it for free</h5>
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-                    <button type="submit" class="btn">Login</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    <div class="direction">
+                      <h5 class="h5">Create an account and try it for free</h5>
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" required>
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                      <button type="submit" class="btn">Login</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </div>
                   </form>
                 </div>
             </section>
