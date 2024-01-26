@@ -1,15 +1,27 @@
-let getStartedButton = document.querySelector('.get-started-button')
+let getStartedButton = document.querySelectorAll('.get-started-button')
+getStartedButton.forEach((button)=>{
+    button.addEventListener('click', ()=>{
 
-getStartedButton.addEventListener('click', ()=>{
+        let popUpWindow = document.querySelector('.popUpWindow');
+        let overlay = document.querySelector('.overlay');
+        popUpWindow.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+    
+        creationPopUp()
+        creationDuFormulaire()
+    });
+})
 
-    let popUpWindow = document.querySelector('.popUpWindow');
-    let overlay = document.querySelector('.overlay');
-    popUpWindow.classList.remove('hidden');
-    overlay.classList.remove('hidden');
+// getStartedButton.addEventListener('click', ()=>{
 
-    creationPopUp()
-    creationDuFormulaire()
-});
+//     let popUpWindow = document.querySelector('.popUpWindow');
+//     let overlay = document.querySelector('.overlay');
+//     popUpWindow.classList.remove('hidden');
+//     overlay.classList.remove('hidden');
+
+//     creationPopUp()
+//     creationDuFormulaire()
+// });
 
 function creationPopUp(){
 
@@ -143,8 +155,23 @@ function closeModal() {
 }
 
 function displaySuccessMessage(){
-    let popUpWindow = document.querySelector('.popUpWindow')
-    popUpWindow.innerHTML = ""
+    let popUpWindow = document.querySelector('.popUpWindow');
+    popUpWindow.innerHTML = "";
+
+    let newDiv = document.createElement('div')
+    newDiv.classList.add('submit-text-container')
+
+    let p = document.createElement('p')
+    p.textContent = "Bienvenue chez Huddle"
+
+    let closeBtn = document.createElement('span');
+    closeBtn.id = 'closeModalBtn';
+    closeBtn.className = 'closeBtn';
+    closeBtn.innerHTML = '&times;';
+
+    popUpWindow.appendChild(newDiv)
+    popUpWindow.appendChild(closeBtn)
+    newDiv.appendChild(p)
 }
 
 let subscribeBtn = document.querySelector('.subscribeBtn')
