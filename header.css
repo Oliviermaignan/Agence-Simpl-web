@@ -34,12 +34,12 @@
 }
 .sec2_1_header{
     width: 45%;
-    padding-top: 7%;
+    padding-top: 4%;
     /* margin-left: 60px; */
 }
 h1{
     text-transform: capitalize;
-    font-size: 2.8vw;
+    font-size: 2.7vw;
     font-family: 'Poppins';
     padding-right:20%;
     color: hsl(192, 100%, 9%);
@@ -49,7 +49,7 @@ h1{
 .p_header{
     padding-right: 50px;
     font-family: 'Open Sans';
-    font-weight: 400;
+    font-weight: 500;
     color: hsl(192, 100%, 9%);
     animation: Animationp alternate 4s;
 }
