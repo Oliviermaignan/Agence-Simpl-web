@@ -1,15 +1,30 @@
 
+/* tried to make a blur but it does't work */
+.background-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(4px);
+    z-index: 3;
+
+}
   
   /* The popup form - hidden by default */
   .form-popup {
     display: none;
     position: fixed;
-    right: 30%;
-    top: 30%;
+    right :20%;
+    left : 20%;
+    top : 20%;
+    bottom : 20%;
     z-index: 4;
-   ;
+  
   }
 
+  /* all components in the form */
   .direction {
     display: flex;
     flex-direction: column;
@@ -70,3 +85,12 @@
     opacity: 1;
   }
   
+  @media only screen and (max-width:720px){
+
+    .h5 {
+      font-size: 18px;
+    }
+
+    .formText {
+      font-size: 14px;
+    }
