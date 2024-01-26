@@ -49,6 +49,7 @@ cursor : pointer;
 
 .modalWindowTitle{
 font-family: 'open sans';
+font-size: 2.5vw;
 font-weight: 600;
 margin: 0 auto;
 text-align: center;
@@ -91,6 +92,11 @@ background-color:hsla(322, 100%, 73%, 0.651)
 border: none;
 box-shadow: 0px 0px 2px 0px #aaaaaa6b;
 border-radius: 3px;
+padding: 1% 4%;
+}
+
+.field > label{
+    font-size: 2.5vw;
 }
 
 @media screen and (max-width: 720px) {
