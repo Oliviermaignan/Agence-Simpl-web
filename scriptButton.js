@@ -60,7 +60,7 @@ function creationDuFormulaire(){
     firstNameInput.setAttribute('type', 'text');
     let labelNameInput = document.createElement('label');
     labelNameInput.setAttribute('for', 'firstName');
-    labelNameInput.textContent = "first name"
+    labelNameInput.textContent = "first name";
 
     //lastName
     let secondField = document.createElement('div');
@@ -70,7 +70,7 @@ function creationDuFormulaire(){
     lastNameInput.setAttribute('type', 'text');
     let labelLastNameInput = document.createElement('label');
     labelLastNameInput.setAttribute('for', 'lastName');
-    labelLastNameInput.textContent = "last name"
+    labelLastNameInput.textContent = "last name";
 
     //email
     let emailField = document.createElement('div');
@@ -81,28 +81,29 @@ function creationDuFormulaire(){
     emailInput.setAttribute('required', '');
     let labelEmailInput = document.createElement('label');
     labelEmailInput.setAttribute('for', 'email');
-    labelEmailInput.textContent = "e-m@il"
+    labelEmailInput.textContent = "e-m@il";
 
     //button
     let btnField = document.createElement('div');
     btnField.className = "btnfield";
-    let subscribeBtn = document.createElement('input')
-    subscribeBtn.classList.add('subscribeBtn')
-    subscribeBtn.textContent = "Subcribe"
-    subscribeBtn.type = "submit"
+    let subscribeBtn = document.createElement('input');
+    subscribeBtn.classList.add('subscribeBtn');
+    subscribeBtn.textContent = "Subcribe";
+    subscribeBtn.type = "submit";
+ 
 
     //attribution parent enfant
-    modalWindowContent.appendChild(formContainer)
+    modalWindowContent.appendChild(formContainer);
 
     //fields dans form container
-    formContainer.appendChild(firstField)
-    formContainer.appendChild(secondField)
-    formContainer.appendChild(emailField)
-    formContainer.appendChild(btnField)
+    formContainer.appendChild(firstField);
+    formContainer.appendChild(secondField);
+    formContainer.appendChild(emailField);
+    formContainer.appendChild(btnField);
 
     // label et input firstField
-    firstField.appendChild(labelNameInput)
-    firstField.appendChild(firstNameInput)
+    firstField.appendChild(labelNameInput);
+    firstField.appendChild(firstNameInput);
 
     // label et input secondField
     secondField.appendChild(labelLastNameInput)
@@ -115,6 +116,11 @@ function creationDuFormulaire(){
     //button subscribe
     btnField.appendChild(subscribeBtn)
 
+    subscribeBtn = document.querySelector('.subscribeBtn')
+    console.log(subscribeBtn)
+    subscribeBtn.addEventListener('click', ()=>{
+    displaySuccessMessage()
+    })
 }
 
 
@@ -135,3 +141,15 @@ function closeModal() {
     document.querySelector(".popUpWindow").classList.add('hidden')
     document.querySelector(".overlay").classList.add('hidden')
 }
+
+function displaySuccessMessage(){
+    let popUpWindow = document.querySelector('.popUpWindow')
+    popUpWindow.innerHTML = ""
+}
+
+let subscribeBtn = document.querySelector('.subscribeBtn')
+console.log(subscribeBtn)
+subscribeBtn.addEventListener('click', ()=>{
+    console.log('coucou')
+    displaySuccessMessage()
+})
