@@ -1,10 +1,11 @@
 footer{
     background-color: hsl(192, 100%, 9%);
-    color: rgb(132, 133, 134);
+    color: white;
     display: flex;
     height: 400px;
     align-items: flex-end;
     padding-top: 3%;
+    font-family: 'Open Sans';
 }
 /* ---------------------------------- */
 
@@ -28,44 +29,32 @@ a{
     list-style: none;
 }
 
-/* #coordonnees-tel:before, #coordonnees-mail:before,  */
 #coordonnees-adresse:before {
     content: "";
-    background-size: cover;
-    width: 10px;
-    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 18px;
     position: absolute;
     margin: 12px 0 0 -35px;
 }
 #coordonnees-tel:before{
-#coordonnees-adresse:before, #coordonnees-tel:before, #coordonnees-mail:before{
     content: "";
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 20px;
-    height: 18px;
+    height: 16px;
     position: absolute;
-    margin: 5px 0 0 -35px;
+    margin: 12px 0 0 -35px;
 }
 #coordonnees-mail:before{
     content: "";
-    background-size: cover;
-    width: 22px;
-    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 16px;
     position: absolute;
     margin: 15px 0 0 -35px;  
-    margin: 5px 0 0 -30px;
-}
-
-#coordonnees-mail:before{
-    width: 15px;
-    height: 12px;
-    margin: 18px 0 0 -30px;
-}
-#coordonnees-tel:before{
-    width: 15px;
-    height: 16px;
-    margin: 10px 0 0 -30px;
-
 }
 
 #coordonnees-adresse:before {
@@ -97,7 +86,7 @@ ul, li{
     font-size: 1.3vw;
 }
 .faq_colonne1{
-    margin-right: 35%;
+    margin-right: 25%;
 }
 .faq_colonne1>ul>li{
     width: max-content;
@@ -116,7 +105,7 @@ ul, li{
 .reseau{
     display: flex;
     font-size: xx-large;
-    padding-left: 115%;
+    padding-left: 85%;
     margin-bottom: 57%;
 }
 
@@ -142,7 +131,7 @@ ul, li{
 }
 #copy{
     padding-bottom: 20%;
-    padding-left: 115%;
+    padding-left: 85%;
     width: 100%;
 }
 
@@ -154,7 +143,13 @@ ul, li{
         align-items: flex-start;
         height: auto;
         padding-top: 25%;
-        padding-left: 7%;
+        padding-left: 5%;
+    }
+    .logo-huddle{
+        padding-top: 7%;
+    }
+    .colonne{
+        padding:5% 2% 0 8%;
     }
 
     #contact{
@@ -162,16 +157,17 @@ ul, li{
         margin: 0;
         width: 100%;
     }
-.adresse, .tel, .mail{
+    .adresse, .tel, .mail{
     font-size: 4vw;
     padding: 0 2% 0 2%;
-}
+    }
 
    #faq{
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         font-size: 4vw;
+        line-height: 2.5;
         margin: 10% 15% 0 0;
    }
 
@@ -186,18 +182,51 @@ ul, li{
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 0;
+        box-sizing: content-box;
    }
-
+   #reseaux{
+        width: 100%;
+        justify-content: center;
+        
+   }
    .reseau{
         font-size: xx-large;
-        margin-top: 0;
+        padding: 3% 0 0 0;
         margin-bottom: 0;
    }
-
+   #copy{
+        padding: 0;
+   }
    #copyright{
         margin-bottom: 0;
         margin-top: -20px;
-        font-size: small;
+        font-size: 2.5vw;
+        text-align: center;
+        padding:2% 0 6% 0;
    }
+
+   #coordonnees-adresse:before {
+    background-size: cover;
+    width: 14px;
+    height: 18px;
+    margin: 0 0 0 -9%;
+    background-repeat:no-repeat;
+    }
+    #coordonnees-tel:before{
+    background-size: contain;
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    margin: 3% 0 0 -9%;
+    background-repeat:no-repeat;
+    }
+    #coordonnees-mail:before{
+    background-size: contain;
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    margin: 3% 0 0 -9%;  
+    background-repeat:no-repeat;
+    }
+
 }
