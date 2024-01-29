@@ -38,6 +38,7 @@ a{
     margin: 12px 0 0 -35px;
 }
 #coordonnees-tel:before{
+#coordonnees-adresse:before, #coordonnees-tel:before, #coordonnees-mail:before{
     content: "";
     background-size: cover;
     width: 20px;
@@ -52,6 +53,19 @@ a{
     height: 18px;
     position: absolute;
     margin: 15px 0 0 -35px;  
+    margin: 5px 0 0 -30px;
+}
+
+#coordonnees-mail:before{
+    width: 15px;
+    height: 12px;
+    margin: 18px 0 0 -30px;
+}
+#coordonnees-tel:before{
+    width: 15px;
+    height: 16px;
+    margin: 10px 0 0 -30px;
+
 }
 
 #coordonnees-adresse:before {
